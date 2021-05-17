@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="GET" name="data">
+        <!--여기서부터는 데이터를 넘길 공간-->
+
+         <!-- 
+            name : 입력한 값을 구분하기 위해 이름 지정
+            value : 기본값 지정
+            placehodler : 미리보기 텍스트
+            autofocus : 자동 커서 설정
+            maxlength : 글자 수 제한 지정
+            readonly : 읽기 전용 지정
+        -->
+
+        <h5>일반 텍스트를 작성하는 공간</h5>
+        <input type="text" name="txt1" value="기본값" autofocus maxlength="10">
+        <input type="text" name="txt2" placeholder="기본값" readonly >
+
+        <br><br>
+        <label for="name">아이디를 작성하는 공간입니다.</label>
+        <input type="text" id="name">
+        <br><br>
+        
+        <!-- 리스트 형태로 데이터를 출력-->
+        <label for="list">음원 검색 :</label>
+        <input type="text" id="list" list="song">
+        <datalist id="song">
+            <option value="선택"></option>
+            <option value="다만세">소녀시대</option>
+            <option value="텔미">원더걸스</option>
+            <option value="거짓말">빅뱅</option>
+            <option value="붉은노을">빅뱅</option>
+        </datalist>
+
+        <br><br>
+        <!-- datalist와 select의 차이는 입력 가능 여부 -->
+        <select>
+            <option value="">메일선택</option>
+            <option value="네이버">naver</option>
+            <option value="다음">daum</option>
+        </select>
+
+        <!-- 비밀번호를 입력-->
+        <br><br>
+        <input type="password" maxlength="10">
+
+        <!-- 체크-->
+        <br><br>
+        축구 <input type="checkbox" > 농구 <input type="checkbox">
+        <br>
+        남자 <input type="radio" name="gender" value="men"> 여자 <input type="radio" name="gender" value="women">
+        <br><br>
+        <input type="file">
+        <br>
+        <input type="color">
+        <br>
+        <input type="number">
+        <br>
+        <input type="range">
+        <br>
+        <input type="date"> <input type="datetime"> <input type="datetime-local">
+        <br>
+        초기화 :<input type="reset">
+        보내기 :<input type="submit">
+
+    </form>
+</body>
+</html>
