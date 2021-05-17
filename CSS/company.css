@@ -18,12 +18,12 @@ a{
 }
 
 #imglogo{
-    width : 192px;
-    height : 50px;
+    width : 230.4px;
+    height : 60px;
 }
 
 header{
-    width : 800px; /*메인 이미지의 너비 사이즈*/
+    width : 100%; /*메인 이미지의 너비 사이즈*/
     height: 95px;
     background-color: #2d3a4b;
     position : relative;
@@ -44,14 +44,15 @@ header{
 
 nav{
     position : absolute;
-    bottom:10px;
-    left:220px;
-    font-size:16px;
+    bottom:35px;
+    left:250px;
+    font-family : "Times New Roman";
+    font-size:1.5em;
 }
 
 nav li {
     display: inline;
-    margin-left : 30px;
+    margin-left : 100px;
 }
 
 nav li a {
@@ -77,5 +78,13 @@ nav li a:hover{
     text-align: center;
 }
  
-footer{padding: 0px 10px;}
-/*footer img{width: 100%;}*/
+footer{
+    font-family : "Times New Roman";
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: #2d3a4b;
+    color : white;
+}
+
+
