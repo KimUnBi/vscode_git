@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "text">Hello JavaScript</p>
+    <button onclick = "innerFunc()">클릭</button>
+    <script>
+        function innerFunc(){
+            var str = document.getElementById("text");
+            alert(str.innerHTML); //태그 내 콘텐츠 읽어오거나 저장하기 위한 속성
+        }
+
+
+    </script>
+</body>
+</html>

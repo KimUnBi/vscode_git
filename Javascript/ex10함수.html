@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function addNumber(num1, num2){
+            alert(num1 + num2);
+        }
+
+        addNumber(1,"2");
+        // 1. 매개변수와 입력값의 데이터 타입이 동일한지 검사하지 않는다.
+        // 2. 매개변수와 입력값의 개수가 같은지 확인하지 않는다.
+        // 3. 입력값의 개수가 매개변수의 개수보다 적다면 매개변수의 값은 undefined로 설정된다.
+        let temp = {
+            name : "홍길동",
+            age : 25
+        };
+        alert(temp.age);
+        alert(temp.name);
+        //객체는 속성과 기능으로 구성됨
+        //객체 내에는 기본 데이터타입, Array, Object등 데이터를 담을 수 있은
+        //객체 내 데이터를 접근하는 방법은 마침표 이용 -> 가지고 있는~
+    </script>
+</body>
+</html>

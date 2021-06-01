@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let javascore = parseInt(prompt("Java점수를 입력하세요."));
+        let androidscore = parseInt(prompt("Android점수를 입력하세요."));
+        let webscore = parseInt(prompt("Web점수를 입력하세요."));
+        let avg = (javascore+androidscore+webscore)/3;
+        let score = 0;
+        if(avg/10 >= 9){
+            score = 'A';
+        }else if(avg/10 >= 8){
+            score = 'B';
+        }else if(avg/10 >= 7){
+            score = 'C';
+        }else {
+            score = 'F';
+        }
+        console.log('당신의 평균은'+avg+'이고 학점은' + score +"입니다.");
+
+    </script>
+</body>
+</html>

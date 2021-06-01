@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><a href = "#">Front-end Developer</a></h1>
+    <input type = "button" value = "DESIGN" id = "btn1">
+    <input type = "button" value = "DEFAULT" id = "btn2">
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+    <h1>JavaScript</h1>
+    <p>Javascript는 웹 페이지를 동적인 페이지로 만들기 위해 고안된 언어입니다. <br>
+    차근차근 Javascript에 대해서 배워보도록합시다.</p>
+    <script>
+        document.querySelector('#btn1').addEventListener('click',function(){
+            document.querySelector('body').style.backgroundColor = 'yellow';
+            document.querySelector('body').style.color = 'blue';
+        })
+
+        document.querySelector('#btn2').addEventListener('click',function(){
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+        })
+
+
+    </script>
+</body>
+</html>
